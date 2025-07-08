@@ -35,17 +35,3 @@ fun findCycle(
     }
     currAns.removeLast()
 }
-
-/*
-
-   0 1 2
-0  F F T
-1  T F F
-2  F T F
-
-[
-    [0 > 2 > 1],
-    [3 > 4]
-]
-
- */
