@@ -23,6 +23,7 @@ class Queue<T>: IQueue<T> {
         if (head == null) return null
         val curr = head!!.value
         head = head!!.next
+        if (head == null) tail = null
         size--
         return curr
     }
