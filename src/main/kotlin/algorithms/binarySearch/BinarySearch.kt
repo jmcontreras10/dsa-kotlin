@@ -1,4 +1,4 @@
-package org.example.algorithms.graphs
+package org.example.algorithms.binarySearch
 
 fun <T: Comparable<T>> binarySearch(array: Array<T>, target: T): Int {
     var min = 0

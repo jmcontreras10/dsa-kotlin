@@ -1,4 +1,4 @@
-package org.example.algorithms.graphs
+package org.example.algorithms.trees
 
 import org.example.dataStructures.Tree.NTreeNode
 
@@ -11,14 +11,14 @@ fun buildTree(paths: Array<String>): NTreeNode<Int> {
         for (i in 0 until path.size - 1){
             val curr = map.getOrDefault(path[i].toInt(), mutableListOf())
             curr.add(path[i+1].toInt())
-            map.put(path[i].toInt(), curr)
+            map[path[i].toInt()] = curr
         }
     }
-    val min = map.keys.sorted()[0]
+    val min = map.keys.min()
 
     fun backTrack(current: Int): NTreeNode<Int> {
         val childrenItems: List<Int> =
-            map.getOrDefault(current, emptyList<Int>())
+            map.getOrDefault(current, emptyList())
         val children: List<NTreeNode<Int>> = childrenItems.map {
                 backTrack(it)
         }

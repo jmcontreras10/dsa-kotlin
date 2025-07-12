@@ -1,6 +1,6 @@
 package algorithms.grapths
 
-import org.example.algorithms.graphs.binarySearch
+import org.example.algorithms.binarySearch.binarySearch
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 

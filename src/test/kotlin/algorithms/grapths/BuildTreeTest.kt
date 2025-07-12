@@ -1,6 +1,6 @@
 package algorithms.grapths
 
-import org.example.algorithms.graphs.buildTree
+import org.example.algorithms.trees.buildTree
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
